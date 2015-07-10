@@ -7,15 +7,87 @@ Fabrizio Milo
 https://github.com/Mistobaan
 https://github.com/Mistobaan/go.talks/2015/gophercon/gotricks.slide
 
+* Interface Name
+
+One note first ...
+
+	By convention, one-method interfaces are named by the method name plus an -er suffix or
+	similar modification to construct an agent noun: Reader, Writer, Formatter, CloseNotifier etc.
+
+Only the interfaces that have _one_ method, not for _all_ the interfaces.
+
 * Variadic functions and nesting
 
+* Variadic functions and nesting
 
-* Inline type
+Example
 
+.play tricks/example4.go
+
+* Check for interface implementation at runtime
+
+* Check for interface implementation at runtime
+
+Example
+
+.play tricks/interface_check.go /BEGIN/,/END/
+
+* encoding/binary
+
+* encoding/binary
+
+You can Read entire structures from a stream:
+
+.play tricks/encoding_binary.go /START/,/END/
+
+* Inline type declaration
+
+* Inline type declaration
+
+Global
+
+.play tricks/example1.go /BEGIN/,/END/
+
+* Inline type declaration
+
+Local
+
+.play tricks/example1.go /BEGIN1/,/END1/
 
 * Inline interface casting
 
+* Inline interface casting
+Let's have a generic structure
+
+.play tricks/example2.go /BEGIN3/,/END3/
+
+We can
+
+.play tricks/example2.go /BEGIN1/,/END1/
+
+* or in a tidier way...
+
+.play tricks/example2.go /BEGIN2/,/END2/
+
+* Inline interface casting
+
+An example of this use is in the appengine code
+.link https://github.com/golang/appengine/blob/master/timeout.go
+
+.play tricks/appengine.go
+
+* Inline function declaration
+
+.play tricks/inline_function.go /BEGIN/,/END/
 
 * Panic / Recovery variable binding
+
+* Panic / Recovery variable binding
+Example
+
+.play tricks/example3.go /BEGIN/,/END/
+
+
+
 
 
