@@ -1,5 +1,7 @@
 Go Tricks
 
+Gophercon Lightning Talks
+
 10 Jul 2015
 
 Fabrizio Milo
@@ -26,9 +28,9 @@ Example
 
 .play tricks/example4.go
 
-* Check for interface implementation at runtime
+* Check for interface implementation at compile time
 
-* Check for interface implementation at runtime
+* Check for interface implementation at compile time
 
 Example
 

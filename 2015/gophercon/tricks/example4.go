@@ -2,7 +2,7 @@ package main
 
 import "log"
 
-func info2(namespace string, args ...string) {
+func info2(namespace string, args ...string) { // HL
 	log.Printf("%s:%#v\n", namespace, args)
 }
 
